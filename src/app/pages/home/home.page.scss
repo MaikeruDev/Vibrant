@@ -1,0 +1,92 @@
+ion-content{
+  ion-button{
+    --padding-start: 0 !important;
+    --padding-end: 0 !important;
+    --padding-top: 0 !important;
+    --padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    ion-icon{
+      width: 100%;
+    }
+  }
+  .Buttons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vw;
+  }
+  ion-button.startButton{
+    width: 80px;
+    height: 80px;
+  }
+  ion-title.header{
+    text-align: center;
+    font-family: 'Molle', cursive;
+    font-size: 90px;
+    margin-top: 35%;
+    position: relative;
+    top: 10px;
+    span{
+      display: inline-block;
+      position: relative;
+      top: 10px;
+    }
+  }
+  ion-text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1{
+      font-family: 'Comforta', sans-serif;
+    }
+  }
+  ion-text.versionText{
+    bottom: -10px;
+    h1{
+      font-size: 20px;
+      opacity: 0.8;
+    }
+  }
+  ion-text.highscore{
+    top: 90vh;
+    h1{
+      font-size: 23px;
+    }
+  }
+}
+
+.bounceAnim{
+  animation: bounce 0.6s ease 2 alternate;
+}
+@keyframes bounce{
+  50%{
+    top: 20px;
+  }
+  100%{
+    top: -10px;
+  }
+}
+.header span:nth-child(2){
+  animation-delay:0.1s;
+}
+.header span:nth-child(3){
+  animation-delay:0.2s;
+}
+.header span:nth-child(4){
+  animation-delay:0.3s;
+}
+.header span:nth-child(5){
+  animation-delay:0.4s;
+}
+.header span:nth-child(6){
+  animation-delay:0.5s;
+}
+.header span:nth-child(7){
+  animation-delay:0.6s;
+}

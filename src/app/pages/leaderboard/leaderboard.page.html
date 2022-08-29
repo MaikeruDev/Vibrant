@@ -1,0 +1,92 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" mode="ios">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="user">
+  <ion-title class="header">
+    <span style="color:#FFD9C0">L</span>
+    <span style="color:#FAF0D7">e</span>
+    <span style="color:#F4BFBF">a</span>
+    <span style="color:#F1F0C0">d</span>
+    <span style="color:#8CC0DE">e</span>
+    <span style="color:#B7E5DD">r</span>
+    <span style="color:#B1BCE6">b</span>
+    <span style="color:#F4BFBF">o</span>
+    <span style="color:#FFD9C0">a</span>
+    <span style="color:#FAF0D7">r</span>
+    <span style="color:#F4BFBF">d</span>
+  </ion-title>
+
+    <ion-grid fixed class="ion-text-center">
+      <ion-row class="placements">
+        <ion-col size="4" class="lower_numbers">2</ion-col>
+        <ion-col size="4">1</ion-col>
+        <ion-col size="4" class="lower_numbers">3</ion-col>
+      </ion-row>
+      <ion-row class="images">
+        <ion-col size="4">
+          <ion-avatar>
+            <img src="{{user.photoURL}}" />
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="4">
+          <ion-avatar class="first_place">
+            <img src="{{user.photoURL}}" />
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="4">
+          <ion-avatar>
+            <img src="{{user.photoURL}}" />
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+      <ion-row class="usernames">
+        <ion-col size="4">GigaNut</ion-col>
+        <ion-col size="4" class="first_place">Maikeru</ion-col>
+        <ion-col size="4">AntiChad</ion-col>
+      </ion-row>
+      <ion-row class="scores">
+        <ion-col size="4">13284</ion-col>
+        <ion-col size="4">15872</ion-col>
+        <ion-col size="4">13094</ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <ion-list>
+      <ion-item lines="none">
+        <ion-text class="placement">4</ion-text>
+        <ion-avatar>
+          <img src="{{user.photoURL}}" />
+        </ion-avatar>
+        <div>
+          <ion-label class="username">Michi</ion-label>
+          <ion-label class="score">Score: 12012</ion-label>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-text class="placement">5</ion-text>
+        <ion-avatar>
+          <img src="{{user.photoURL}}" />
+        </ion-avatar>
+        <div>
+          <ion-label class="username">Michi</ion-label>
+          <ion-label class="score">Score: 11423</ion-label>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-text class="placement">6</ion-text>
+        <ion-avatar>
+          <img src="{{user.photoURL}}" />
+        </ion-avatar>
+        <div>
+          <ion-label class="username">Michi</ion-label>
+          <ion-label class="score">Score: 9872</ion-label>
+        </div>
+      </ion-item>
+    </ion-list>
+  
+</ion-content>

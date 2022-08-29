@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" mode="ios">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="user">
+  <ion-title class="header">
+    <span style="color:#FFD9C0">S</span>
+    <span style="color:#FAF0D7">e</span>
+    <span style="color:#F4BFBF">t</span>
+    <span style="color:#F1F0C0">t</span>
+    <span style="color:#8CC0DE">i</span>
+    <span style="color:#B7E5DD">n</span>
+    <span style="color:#B1BCE6">g</span>
+    <span style="color:#F4BFBF">s</span>
+  </ion-title>
+
+  <ion-list class="mainList">
+    <ion-avatar class="pfp">
+      <img src="{{user.photoURL}}" />
+    </ion-avatar>
+    <ion-text color="primary" class="ion-text-center username">
+      <h1>{{user.displayName}}</h1>
+    </ion-text>
+  </ion-list>
+</ion-content>

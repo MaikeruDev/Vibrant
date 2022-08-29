@@ -1,0 +1,33 @@
+ion-content{
+    ion-title.header{
+        text-align: center;
+        font-family: 'Molle', cursive;
+        font-size: 75px;
+        margin: 80px 0 70px 0;
+    }
+    ion-item{
+        margin: 15px 30px 15px 30px;
+        border: 3.5px solid var(--ion-color-primary);
+        border-radius: 15px;
+        ion-input{
+            border: transparent;
+            --border: transparent;
+        }
+    }
+    ion-button.registerBtn{
+        margin: 15px 32px 15px 32px;
+        color: black;
+        height: 45px;
+        text-transform: none;
+        font-family: 'Comforta', sans-serif !important;
+        --border-radius: 10px !important;
+        ion-icon{
+            padding-top: 2px;
+        }
+    }
+    ion-text.loginText{
+        p{
+            text-decoration: underline;
+        }
+    }
+}

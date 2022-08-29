@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Fonts */
+@font-face {
+    font-family: Molle;
+    src: url("../src/assets/fonts/Molle-Italic.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.no-ripple {
+    --ripple-color: transparent;
+  }

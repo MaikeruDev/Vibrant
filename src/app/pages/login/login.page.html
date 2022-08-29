@@ -1,0 +1,32 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <ion-title class="header">
+    <span style="color:#FAF0D7">L</span>
+    <span style="color:#FFD9C0">o</span>
+    <span style="color:#F1F0C0">g</span>
+    <span style="color:#8CC0DE">i</span>
+    <span style="color:#B7E5DD">n</span>
+  </ion-title>
+
+  <ion-item lines="none">
+    <ion-label position="stacked">E-Mail</ion-label>
+    <ion-input [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="login()" class="loginBtn no-ripple" expand="block">
+    <p>Login</p>
+    <ion-icon slot="end" name="chevron-forward"></ion-icon>
+  </ion-button>
+
+  <ion-text (click)="toRegister()" color="primary" class="ion-text-center registerText">
+    <p>Click to Register</p>
+  </ion-text>
+
+</ion-content>

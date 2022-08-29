@@ -1,0 +1,30 @@
+ion-header{
+    ion-toolbar{
+        --background: transparent !important;
+        ion-buttons{
+            position: absolute;
+            top: 20px;
+            left: 12px;
+        }
+    }
+}
+
+ion-content{
+    ion-title.header{
+        text-align: center;
+        font-family: 'Molle', cursive;
+        font-size: 70px;
+        margin-top: 12%; 
+    }
+    ion-list.mainList{
+        background: transparent !important;
+        ion-avatar.pfp{
+            margin: auto;
+        }
+        ion-text.username{
+            h1{
+                margin-top: 10px;
+            }
+        }
+    }
+}

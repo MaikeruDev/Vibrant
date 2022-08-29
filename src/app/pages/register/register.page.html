@@ -1,0 +1,43 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <ion-title class="header">
+    <span style="color:#FFD9C0">R</span>
+    <span style="color:#FAF0D7">e</span>
+    <span style="color:#F4BFBF">g</span>
+    <span style="color:#F1F0C0">i</span>
+    <span style="color:#8CC0DE">s</span>
+    <span style="color:#B7E5DD">t</span>
+    <span style="color:#B1BCE6">e</span>
+    <span style="color:#FAF0D7">r</span>
+  </ion-title>
+
+  <ion-item lines="none">
+    <ion-label position="stacked">E-Mail</ion-label>
+    <ion-input [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Username</ion-label>
+    <ion-input [(ngModel)]="username" type="name"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Repeat Password</ion-label>
+    <ion-input [(ngModel)]="passwordRepeat" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="register()" class="registerBtn no-ripple" expand="block">
+    <p>Register</p>
+    <ion-icon slot="end" name="chevron-forward"></ion-icon>
+  </ion-button>
+
+  <ion-text (click)="toLogin()" color="primary" class="ion-text-center loginText">
+    <p>Click to Login</p>
+  </ion-text>
+
+</ion-content>

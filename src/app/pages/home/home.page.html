@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-title class="header" id="headerTitle">
+    <span class="letter" style="color:#FFD9C0">V</span>
+    <span class="letter" style="color:#FAF0D7">i</span>
+    <span class="letter" style="color:#F4BFBF">b</span>
+    <span class="letter" style="color:#F1F0C0">r</span>
+    <span class="letter" style="color:#8CC0DE">a</span>
+    <span class="letter" style="color:#B7E5DD">n</span>
+    <span class="letter" style="color:#B1BCE6">t</span>
+  </ion-title>
+
+  <div class="Buttons">
+    <ion-button (click)="goTo('game')" shape="round" class="startButton no-ripple">
+      <ion-icon slot="icon-only" name="play"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="goTo('leaderboard')" shape="round" class="scoreboardButton no-ripple">
+      <ion-icon slot="icon-only" name="trophy"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="goTo('settings')" shape="round" class="settingsButton no-ripple">
+      <ion-icon slot="icon-only" name="cog"></ion-icon>
+    </ion-button>
+  </div>
+
+  <ion-text color="primary" class="highscore">
+    <h1>Highscore: 21</h1>
+  </ion-text>
+
+  <ion-text color="primary" (click)="logout()" class="versionText">
+    <h1>Version 0.0.1</h1>
+  </ion-text>
+</ion-content>
